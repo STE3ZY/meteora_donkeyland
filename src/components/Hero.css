@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap");
+
+.hero {
+  /* height: 100vh; */
+  background-color: #f6f6e4;
+  background-size: contain;
+  background-position: 2%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.hero__title,
+.hero__button {
+  z-index: 99;
+}
+
+.hero__text {
+  margin-right: 2rem;
+  /* background-color: rgba(246, 246, 228, 0.6); */
+  border-radius: 1rem;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  z-index: 99;
+}
+
+.hero--logo {
+  z-index: 99;
+  margin-top: 2rem;
+}
+.hero__title {
+  height: 8rem;
+  background-image: url(../images/title-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+  font-weight: bolder;
+  z-index: 99;
+  margin-top: 2rem;
+}
+
+.hero__subtitle {
+  text-align: center;
+  letter-spacing: 0.5rem;
+  color: var(--first-color);
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 1rem 2rem;
+  z-index: 99;
+}
+
+.hero__paragraph {
+  text-align: center;
+  max-width: 500px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: Inter;
+  color: #000000;
+  letter-spacing: 3px;
+  z-index: 99;
+  padding-top: 15px;
+  margin-bottom: 4rem;
+}
+
+.hero__button {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  background: var(--first-color);
+  transition: 0.35s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+  #home {
+    background-image: none !important;
+  }
+
+  .hero__text {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+  .hero--logo {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .hero__paragraph {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero__paragraph {
+    max-width: 300px;
+  }
+}

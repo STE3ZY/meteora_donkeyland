@@ -1,17 +1,19 @@
 import { useState } from "react";
 import navlogo from "../images/nav-logo.png";
+import "./Navbar.css";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-white shadow">
+    <nav className="w-full bg-[#f6f6e4] shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+          <div className="flex items-center justify-between py-2 md:py-1 md:block">
             <a href="javascript:void(0)">
-              <img src={navlogo} className=" max-h-14 " />
+              <img src={navlogo} className="nav--logo " />
             </a>
+
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -60,12 +62,12 @@ export default function NavBar() {
               <li className="text-gray-600 hover:text-blue-600">
                 <a href="javascript:void(0)">Home</a>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
+              {/*<li className="text-gray-600 hover:text-blue-600">
                 <a href="javascript:void(0)">Blog</a>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
                 <a href="javascript:void(0)">About US</a>
-              </li>
+          </li> */}
               <li className="text-gray-600 hover:text-blue-600">
                 <a href="javascript:void(0)">Contact US</a>
               </li>
