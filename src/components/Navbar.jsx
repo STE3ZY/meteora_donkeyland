@@ -2,8 +2,12 @@ import { useState } from "react";
 import navlogo from "../images/nav-logo.png";
 import "./Navbar.css";
 
-export default function NavBar() {
+export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
   const [navbar, setNavbar] = useState(false);
+
+  const handleLanguageClick = (language) => {
+    setSelectedLanguage(language);
+  };
 
   return (
     <nav className="w-full bg-[#f6f6e4] shadow">
@@ -11,7 +15,7 @@ export default function NavBar() {
         <div>
           <div className="flex items-center justify-between py-2 md:py-1 md:block">
             <a href="javascript:void(0)">
-              <img src={navlogo} className="nav--logo " />
+              <img src={navlogo} className="nav--logo" alt="Logo" />
             </a>
 
             <div className="md:hidden">
@@ -60,16 +64,42 @@ export default function NavBar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="javascript:void(0)">Home</a>
-              </li>
-              {/*<li className="text-gray-600 hover:text-blue-600">
-                <a href="javascript:void(0)">Blog</a>
+                <a href="javascript:void(0)">
+                  {selectedLanguage === "🇬🇷" ? "Αρχική" : "Home"}
+                </a>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="javascript:void(0)">About US</a>
-          </li> */}
+                <a href="javascript:void(0)">
+                  {selectedLanguage === "🇬🇷" ? "Προϊόντα" : "Products"}
+                </a>
+              </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="javascript:void(0)">Contact US</a>
+                <a href="javascript:void(0)">
+                  {selectedLanguage === "🇬🇷" ? "Σχετικά με εμάς" : "About US"}
+                </a>
+              </li>
+              <li className="text-gray-600 hover:text-blue-600">
+                <a href="javascript:void(0)">
+                  {selectedLanguage === "🇬🇷" ? "Επικοινωνία" : "Contact Us"}
+                </a>
+              </li>
+              <li className="text-3xl">
+                <span
+                  className={`language-item mr-5 md:m-5 cursor-pointer ${
+                    selectedLanguage === "🇬🇷" ? "" : "opacity-20"
+                  }`}
+                  onClick={() => handleLanguageClick("🇬🇷")}
+                >
+                  🇬🇷
+                </span>
+                <span
+                  className={`language-item cursor-pointer ${
+                    selectedLanguage === "🇬🇧" ? "" : "opacity-20"
+                  }`}
+                  onClick={() => handleLanguageClick("🇬🇧")}
+                >
+                  🇬🇧
+                </span>
               </li>
             </ul>
           </div>

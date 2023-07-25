@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 
 function App() {
-  return (
-    <>
-      <Navbar />
+  const [selectedLanguage, setSelectedLanguage] = useState("🇬🇷");
 
-      <Hero />
-      <Footer />
-    </>
+  return (
+    <div>
+      <Navbar
+        selectedLanguage={selectedLanguage}
+        setSelectedLanguage={setSelectedLanguage}
+      />
+      <Hero selectedLanguage={selectedLanguage} />
+      <Footer selectedLanguage={selectedLanguage} />
+    </div>
   );
 }
 
