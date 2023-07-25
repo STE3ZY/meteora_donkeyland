@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap");
 
 .hero {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #f6f6e4;
   background-size: contain;
   background-position: 2%;
@@ -32,9 +32,9 @@
 
 .hero__text {
   margin-right: 2rem;
-  /* background-color: rgba(246, 246, 228, 0.6); */
+  background-color: rgba(246, 246, 228, 0.2);
   border-radius: 1rem;
-  max-width: 50%;
+  width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -59,7 +59,7 @@
   margin-top: 2rem;
 }
 
-.hero__subtitle {
+/* .hero__subtitle {
   text-align: center;
   letter-spacing: 0.5rem;
   color: var(--first-color);
@@ -67,11 +67,11 @@
   font-weight: bolder;
   margin: 1rem 2rem;
   z-index: 99;
-}
+} */
 
 .hero__paragraph {
   text-align: center;
-  max-width: 500px;
+  max-width: 400px;
   font-size: 1.2rem;
   font-weight: 400;
   font-family: Inter;
@@ -100,7 +100,7 @@
   transition: 0.35s ease-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1035px) {
   #home {
     background-image: none !important;
   }

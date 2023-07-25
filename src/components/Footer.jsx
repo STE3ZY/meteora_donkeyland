@@ -40,16 +40,16 @@ const Footer = ({ selectedLanguage }) => {
                 style={{ color: "#ffffff" }}
               />{" "}
               <p className="footer__information">24320 23450</p>
-            </div>
+            </div>*/}
             <div className="footer__item">
               <FontAwesomeIcon
                 className="font-awesome"
                 icon={faEnvelope}
                 style={{ color: "#ffffff" }}
               />{" "}
-              <p className="footer__information">flowcafegr@gmail.com</p>
-  </div> */}
-            <div className="footer__item">
+              <p className="footer__information">malatras@otenet.gr</p>
+            </div>
+            {/*<div className="footer__item">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d745.3769097745046!2d21.621792420356662!3d39.720051728973715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDQzJzEyLjMiTiAyMcKwMzcnMjAuNiJF!5e0!3m2!1sen!2sgr!4v1690225017689!5m2!1sen!2sgr"
                 width="300"
@@ -59,7 +59,7 @@ const Footer = ({ selectedLanguage }) => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
-            </div>
+            </div>*/}
           </div>
         </div>
 

@@ -1,21 +1,32 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("🇬🇷");
 
   return (
-    <div>
+    <Router>
       <Navbar
         selectedLanguage={selectedLanguage}
         setSelectedLanguage={setSelectedLanguage}
       />
-      <Hero selectedLanguage={selectedLanguage} />
+      <Routes>
+        <Route
+          path="/"
+          element={<Home selectedLanguage={selectedLanguage} />}
+        />
+        <Route
+          path="/contact"
+          element={<Contact selectedLanguage={selectedLanguage} />}
+        />
+      </Routes>
       <Footer selectedLanguage={selectedLanguage} />
-    </div>
+    </Router>
   );
 }
 
