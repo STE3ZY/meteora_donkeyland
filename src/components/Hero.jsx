@@ -5,7 +5,6 @@ import titlegb from "../images/title-gb.png";
 import titlegr from "../images/title-gr.png";
 
 const Hero = ({ selectedLanguage }) => {
-  console.log("Selected Language in Hero:", selectedLanguage);
   return (
     <section
       className="hero section"

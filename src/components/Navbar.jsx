@@ -1,6 +1,7 @@
 import { useState } from "react";
 import navlogo from "../images/nav-logo.png";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
   const [navbar, setNavbar] = useState(false);
@@ -14,9 +15,9 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-2 md:py-1 md:block">
-            <a href="javascript:void(0)">
+            <Link to="/">
               <img src={navlogo} className="nav--logo" alt="Logo" />
-            </a>
+            </Link>
 
             <div className="md:hidden">
               <button
@@ -64,14 +65,9 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="javascript:void(0)">
+                <Link to="/">
                   {selectedLanguage === "🇬🇷" ? "Αρχική" : "Home"}
-                </a>
-              </li>
-              <li className="text-gray-600 hover:text-blue-600">
-                <a href="javascript:void(0)">
-                  {selectedLanguage === "🇬🇷" ? "Προϊόντα" : "Products"}
-                </a>
+                </Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
                 <a href="javascript:void(0)">
@@ -80,8 +76,13 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
               </li>
               <li className="text-gray-600 hover:text-blue-600">
                 <a href="javascript:void(0)">
-                  {selectedLanguage === "🇬🇷" ? "Επικοινωνία" : "Contact Us"}
+                  {selectedLanguage === "🇬🇷" ? "Προϊόντα" : "Products"}
                 </a>
+              </li>
+              <li className="text-gray-600 hover:text-blue-600">
+                <Link to="/contact">
+                  {selectedLanguage === "🇬🇷" ? "Επικοινωνία" : "Contact Us"}
+                </Link>
               </li>
               <li className="text-3xl">
                 <span
