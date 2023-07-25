@@ -5,7 +5,7 @@ import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const Footer = () => {
+const Footer = ({ selectedLanguage }) => {
   return (
     <footer className="footer">
       <div className="footer__container">
@@ -20,8 +20,17 @@ const Footer = () => {
                 style={{ color: "#ffffff" }}
               />
               <p className="footer__information">
-                Kastraki, Kalampaka <br />
-                St. George Madilas
+                {selectedLanguage === "🇬🇷" ? (
+                  <span>
+                    Καστράκι, Καλαμπάκα <br />
+                    Άγιος Γεώργιος Μαντηλάς
+                  </span>
+                ) : (
+                  <span>
+                    Kastraki, Kalampaka <br />
+                    St. George Madilas
+                  </span>
+                )}
               </p>
             </div>
             {/*<div className="footer__item">
