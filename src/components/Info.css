@@ -15,7 +15,7 @@
 .info-text {
   margin: 20px;
 }
-.section-contact .text-box {
+.text-box {
   text-align: center;
   background-color: transparent;
   color: #fff;
@@ -24,13 +24,14 @@
   font-weight: 600;
   margin-bottom: 40px;
 }
-.section-contact .text-box span {
+.text-box span {
+  display: inline-block;
   background-image: url(../images/generic-bg.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 2px 5px;
+  padding: 5px 50px;
   margin-right: 5px;
 }
 .section-contact .info {

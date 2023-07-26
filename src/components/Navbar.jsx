@@ -2,6 +2,8 @@ import { useState } from "react";
 import navlogo from "../images/nav-logo.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import grFlag from "../images/gr-flag.png";
+import gbFlag from "../images/gb-flag.png";
 
 export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
   const [navbar, setNavbar] = useState(false);
@@ -71,12 +73,12 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
               </li>
               <li className="text-gray-600 hover:text-blue-600">
                 <a href="javascript:void(0)">
-                  {selectedLanguage === "🇬🇷" ? "Σχετικά με εμάς" : "About US"}
+                  {selectedLanguage === "🇬🇷" ? "Προϊόντα" : "Products"}
                 </a>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
                 <a href="javascript:void(0)">
-                  {selectedLanguage === "🇬🇷" ? "Προϊόντα" : "Products"}
+                  {selectedLanguage === "🇬🇷" ? "Φωτογραφίες" : "Gallery"}
                 </a>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
@@ -91,7 +93,7 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
                   }`}
                   onClick={() => handleLanguageClick("🇬🇷")}
                 >
-                  🇬🇷
+                  <img src={grFlag} className="language-flag inline w-8" />
                 </span>
                 <span
                   className={`language-item cursor-pointer ${
@@ -99,7 +101,7 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
                   }`}
                   onClick={() => handleLanguageClick("🇬🇧")}
                 >
-                  🇬🇧
+                  <img src={gbFlag} className="language-flag inline w-8" />
                 </span>
               </li>
             </ul>
