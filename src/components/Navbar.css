@@ -1,6 +1,10 @@
-.nav--logo {
-  max-width: 3rem !important;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 
-.language-item {
+.nav--logo {
+  max-width: 3rem !important;
 }

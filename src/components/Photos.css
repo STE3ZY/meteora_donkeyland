@@ -1,0 +1,29 @@
+.lg-react-element {
+  background-image: url(../images/info-bg.png);
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  position: relative;
+  display: grid; /* Use grid instead of flex */
+  grid-template-rows: repeat(4, 0.2fr); /* 4 rows with equal height */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  justify-items: center; /* Center items horizontally in the columns */
+  align-items: center; /* Center items vertically in the rows */
+  gap: 10px; /* Optional - adds a 10px gap between grid items */
+  z-index: 1;
+}
+.photo-item {
+  padding: 0 1rem;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .lg-react-element {
+    padding-top: 8rem;
+
+    grid-template-rows: repeat(10, 0.2fr); /* 4 rows with equal height */
+    grid-template-columns: repeat(1, 1fr); /* 3 columns with equal width */
+    justify-items: center; /* Center items horizontally in the columns */
+    align-items: center; /* Center items vertically in the rows */
+    gap: 10px; /* Optional - adds a 10px gap between grid items */
+  }
+}

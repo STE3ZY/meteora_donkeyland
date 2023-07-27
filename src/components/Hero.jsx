@@ -1,8 +1,8 @@
 import "./Hero.css";
-import heroBg from "../images/hero-bg.png";
+import heroBg from "../images/hero-bg2.jpg";
 import heroLogo from "../images/hero-logo.png";
-import titlegb from "../images/title-gb.png";
-import titlegr from "../images/title-gr.png";
+import titlegb from "../images/welcome-gb.png";
+import titlegr from "../images/welcome-gr.png";
 
 const Hero = ({ selectedLanguage }) => {
   return (
@@ -15,19 +15,13 @@ const Hero = ({ selectedLanguage }) => {
     >
       <div className="hero__text">
         <img src={heroLogo} alt="hero logo" className="hero--logo" />
+      </div>
+      <div className="hero__text">
         <img
           src={selectedLanguage === "🇬🇷" ? titlegr : titlegb}
           alt="welcome"
           className="title--logo"
         />
-
-        <p className="hero__paragraph">
-          {selectedLanguage === "🇬🇷"
-            ? "Βρισκόμαστε κάτω από τους επιβλητικούς βράχους των Μετεώρων και η αποστολή μας είναι να σας προσφέρουμε μια αξέχαστη εμπειρία γνωριμίας με τα χαριτωμένα μας γαϊδουράκια."
-            : "We are located beneath the majestic rocks of Meteora, and our mission is to offer you an unforgettable experience getting to know our adorable donkeys."}
-        </p>
-
-        {}
       </div>
     </section>
   );
