@@ -1,5 +1,5 @@
 import { useState } from "react";
-import navlogo from "../images/nav-logo.png";
+import navlogo from "../images/footer-logo.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import grFlag from "../images/gr-flag.png";
@@ -13,7 +13,7 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
   };
 
   return (
-    <nav className="w-full bg-[#f6f6e4] shadow">
+    <nav className="navbar w-full bg-[#000000] shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-2 md:py-1 md:block">
@@ -23,7 +23,7 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
 
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -66,22 +66,22 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-white hover:text-blue-600">
                 <Link to="/">
                   {selectedLanguage === "🇬🇷" ? "Αρχική" : "Home"}
                 </Link>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-white hover:text-blue-600">
                 <a href="javascript:void(0)">
                   {selectedLanguage === "🇬🇷" ? "Προϊόντα" : "Products"}
                 </a>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
-                <a href="javascript:void(0)">
+              <li className="text-white hover:text-blue-600">
+                <Link to="/gallery">
                   {selectedLanguage === "🇬🇷" ? "Φωτογραφίες" : "Gallery"}
-                </a>
+                </Link>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-white hover:text-blue-600">
                 <Link to="/contact">
                   {selectedLanguage === "🇬🇷" ? "Επικοινωνία" : "Contact Us"}
                 </Link>
@@ -89,7 +89,7 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
               <li className="text-3xl">
                 <span
                   className={`language-item mr-5 md:m-5 cursor-pointer ${
-                    selectedLanguage === "🇬🇷" ? "" : "opacity-20"
+                    selectedLanguage === "🇬🇷" ? "" : "opacity-40"
                   }`}
                   onClick={() => handleLanguageClick("🇬🇷")}
                 >
@@ -97,7 +97,7 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
                 </span>
                 <span
                   className={`language-item cursor-pointer ${
-                    selectedLanguage === "🇬🇧" ? "" : "opacity-20"
+                    selectedLanguage === "🇬🇧" ? "" : "opacity-40"
                   }`}
                   onClick={() => handleLanguageClick("🇬🇧")}
                 >

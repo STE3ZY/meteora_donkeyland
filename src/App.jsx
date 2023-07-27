@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import Gallery from "./pages/Gallery";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("🇬🇷");
@@ -23,6 +24,10 @@ function App() {
         <Route
           path="/contact"
           element={<Contact selectedLanguage={selectedLanguage} />}
+        />
+        <Route
+          path="/gallery"
+          element={<Gallery selectedLanguage={selectedLanguage} />}
         />
       </Routes>
       <Footer selectedLanguage={selectedLanguage} />
