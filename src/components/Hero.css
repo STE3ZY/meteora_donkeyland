@@ -73,3 +73,13 @@
     max-width: 300px;
   }
 }
+
+@media screen and (max-height: 650px) {
+  .hero {
+    justify-content: flex-end;
+  }
+  .hero--logo,
+  .title--logo {
+    width: 50%;
+  }
+}
