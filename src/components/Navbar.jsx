@@ -1,15 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import navlogo from "../images/footer-logo.png";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import grFlag from "../images/gr-flag.png";
 import gbFlag from "../images/gb-flag.png";
 
 export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
   const [navbar, setNavbar] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to top when route changes
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const handleLanguageClick = (language) => {
     setSelectedLanguage(language);
+  };
+
+  const handleLinkClick = () => {
+    // Close the navbar when a link is clicked
+    setNavbar(false);
   };
 
   return (
@@ -67,22 +78,22 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-white hover:text-blue-600">
-                <Link to="/">
+                <Link to="/" onClick={handleLinkClick}>
                   {selectedLanguage === "🇬🇷" ? "Αρχική" : "Home"}
                 </Link>
               </li>
               <li className="text-white hover:text-blue-600">
-                <a href="javascript:void(0)">
+                <Link to="/" onClick={handleLinkClick}>
                   {selectedLanguage === "🇬🇷" ? "Προϊόντα" : "Products"}
-                </a>
+                </Link>
               </li>
               <li className="text-white hover:text-blue-600">
-                <Link to="/gallery">
+                <Link to="/gallery" onClick={handleLinkClick}>
                   {selectedLanguage === "🇬🇷" ? "Φωτογραφίες" : "Gallery"}
                 </Link>
               </li>
               <li className="text-white hover:text-blue-600">
-                <Link to="/contact">
+                <Link to="/contact" onClick={handleLinkClick}>
                   {selectedLanguage === "🇬🇷" ? "Επικοινωνία" : "Contact Us"}
                 </Link>
               </li>
