@@ -1,6 +1,6 @@
 .lg-react-element {
   background-image: url(../images/info-bg.png);
-  padding-top: 5rem;
+  padding-top: 100px;
   padding-bottom: 1rem;
   position: relative;
   display: grid; /* Use grid instead of flex */
@@ -18,7 +18,7 @@
 
 @media only screen and (max-width: 767px) {
   .lg-react-element {
-    padding-top: 8rem;
+    padding-top: 100px;
 
     grid-template-rows: repeat(10, 0.2fr); /* 4 rows with equal height */
     grid-template-columns: repeat(1, 1fr); /* 3 columns with equal width */

@@ -83,7 +83,7 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
                 </Link>
               </li>
               <li className="text-white hover:text-blue-600">
-                <Link to="/" onClick={handleLinkClick}>
+                <Link to="/products" onClick={handleLinkClick}>
                   {selectedLanguage === "🇬🇷" ? "Προϊόντα" : "Products"}
                 </Link>
               </li>
