@@ -1,4 +1,4 @@
-.section-contact {
+.section-product {
   text-align: center;
   background-color: #3e3e3b;
   background-image: url(../images/info-bg.png);
@@ -6,70 +6,63 @@
   background-repeat: no-repeat;
   padding: 130px 0 50px;
 }
-.contact-container {
+.product-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.info-text {
+.product-info-text {
+  max-width: 800px;
   margin: 20px;
 }
-.text-box {
+.product-text-box {
   text-align: center;
   background-color: transparent;
   color: #fff;
   margin-top: 10px;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 600;
   margin-bottom: 40px;
 }
-.text-box span {
+.product-text-box span {
   display: inline-block;
   background-image: url(../images/generic-bg.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
-  /* padding: 5px 50px; */
-  /* margin-right: 5px; */
+  color: #ffffff;
 }
-.section-contact .info {
+.section-product .product-info {
   color: #fff;
   margin-bottom: 40px;
 }
-.section-contact .info span {
+.section-product .product-info span {
   display: block;
   font-size: 18px;
 }
-.section-contact .info p {
+.section-product .product-info p {
   font-size: 16px;
 }
 
-.info-map {
-  border-radius: 20px;
-}
 @media only screen and (max-width: 1100px) {
-  .contact-container {
+  .product-container {
     flex-direction: column;
   }
 }
 @media only screen and (max-width: 522px) {
-  .info-map {
-    width: 300px;
-  }
   .text-box {
     font-size: 52px !important;
   }
 }
 @media only screen and (min-width: 768px) {
-  .section-contact {
+  .section-product {
     padding-top: 155px;
   }
-  .section-contact .info span {
+  .section-product .product-info span {
     font-size: 22px;
   }
-  .section-contact .info p {
+  .section-product .product-info p {
     font-size: 18px;
   }
 }
