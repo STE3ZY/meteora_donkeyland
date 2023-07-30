@@ -23,7 +23,7 @@ function About({ selectedLanguage }) {
           <img src={footprint} alt="donkey footprint" className="footprint" />
           <span className="about-text">
             {selectedLanguage === "🇬🇷"
-              ? "Κατά την ανέγερση των εντυπωσιακών Μοναστηριών, τα γαϊδουράκια έπαιξαν αναντικατάστατο ρόλο. Με ακλόνητη δύναμη, διέσχιζαν επικίνδυνα μονοπάτια, κουβαλώντας σημαντικές προμήθειες και υλικά στους ψηλούς βράχους των Μετώρων. Οι ακατάπαυστες προσπάθειές τους υποστήριξαν την επιθυμία των μοναχών, επιτρέποντας τη δημιουργία αυτών των εμβληματικών μοναστηριών που συνεχίζουν να εμπνέουν δέος μέχρι σήμερα."
+              ? "Κατά την ανέγερση των εντυπωσιακών Μοναστηριών, τα γαϊδουράκια έπαιξαν αναντικατάστατο ρόλο. Με ακλόνητη δύναμη, διέσχιζαν επικίνδυνα μονοπάτια, κουβαλώντας σημαντικές προμήθειες και υλικά στους ψηλούς βράχους των Μετώρων. Οι ακατάπαυστες προσπάθειές τους στήριξαν την επιθυμία των μοναχών, επιτρέποντας τη δημιουργία αυτών των εμβληματικών μοναστηριών που συνεχίζουν να εμπνέουν δέος μέχρι σήμερα."
               : "During the construction of the impressive Monasteries, donkeys played an irreplaceable role. With unwavering strength, they traversed dangerous paths, carrying important supplies and materials to the high rocks of Meteora. Their tireless efforts supported the monks desire, enabling the creation of these iconic monasteries that continue to inspire awe to this day."}
           </span>
         </div>
@@ -31,7 +31,7 @@ function About({ selectedLanguage }) {
           <img src={footprint} alt="donkey footprint" className="footprint" />
           <span className="about-text">
             {selectedLanguage === "🇬🇷"
-              ? "Στο Meteora Donkeyland, σας προσκαλούμε να απολαύσετε τον απίστευτο δεσμό αναμεσα στους ανθρώους και τα γαϊδουράκια. Γνωρίστε τους γλυκούς μας συντρόφους και ζήστε τη ζεστασιά τους από κοντά. Απολαύστε παιχνίδια και δημιουργήστε αξέχαστες στιγμές. Αιχμαλωτίστε τη χαρά και την αθωότητα που μοιράζεστε με τα γαϊδουράκια μας μέσα από τη φωτογραφία. Οι εικόνες απέναντι στο όμορφο υπόβαθρο των Μετεώρων και των μοναστηριών θα δημιουργήσουν εκπληκτικές αναμνήσεις."
+              ? "Στο Meteora Donkeyland, σας προσκαλούμε να απολαύσετε τον απίστευτο δεσμό αναμεσα στους ανθρώπους και τα γαϊδουράκια. Γνωρίστε τους γλυκούς μας συντρόφους και ζήστε τη ζεστασιά τους από κοντά. Απολαύστε παιχνίδια και δημιουργήστε αξέχαστες στιγμές. Αιχμαλωτίστε τη χαρά και την αθωότητα που αναδύεται όταν βρίσκεστε με τα γαϊδουράκια μας μέσω της φωτογραφίας. Οι εικόνες απέναντι στο όμορφο υπόβαθρο των Μετεώρων και των μοναστηριών θα δημιουργήσουν εκπληκτικές αναμνήσεις."
               : "At Meteora Donkeyland, we invite you to witness the incredible bond between humans and donkeys. Meet our sweet companions and experience their warmth up close. Enjoy games and create unforgettable moments. Capture the joy and innocence you share with our donkeys through photography. The images against the beautiful backdrop of Meteora and the monasteries will create amazing memories."}
           </span>
         </div>
