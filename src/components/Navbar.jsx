@@ -102,7 +102,10 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
                   className={`language-item mr-5 md:m-5 cursor-pointer ${
                     selectedLanguage === "🇬🇷" ? "" : "opacity-40"
                   }`}
-                  onClick={() => handleLanguageClick("🇬🇷")}
+                  onClick={() => {
+                    handleLanguageClick("🇬🇷");
+                    handleLinkClick();
+                  }}
                 >
                   <img src={grFlag} className="language-flag inline w-8" />
                 </span>
@@ -110,7 +113,10 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
                   className={`language-item cursor-pointer ${
                     selectedLanguage === "🇬🇧" ? "" : "opacity-40"
                   }`}
-                  onClick={() => handleLanguageClick("🇬🇧")}
+                  onClick={() => {
+                    handleLanguageClick("🇬🇧");
+                    handleLinkClick();
+                  }}
                 >
                   <img src={gbFlag} className="language-flag inline w-8" />
                 </span>
