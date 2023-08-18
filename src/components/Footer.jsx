@@ -33,14 +33,14 @@ const Footer = ({ selectedLanguage }) => {
                 )}
               </p>
             </div>
-            {/*<div className="footer__item">
+            <div className="footer__item">
               <FontAwesomeIcon
                 className="font-awesome"
                 icon={faPhone}
                 style={{ color: "#ffffff" }}
               />{" "}
-              <p className="footer__information">24320 23450</p>
-            </div>*/}
+              <p className="footer__information">697 441 6504</p>
+            </div>
             <div className="footer__item">
               <FontAwesomeIcon
                 className="font-awesome"
@@ -61,6 +61,14 @@ const Footer = ({ selectedLanguage }) => {
               ></iframe>
             </div>*/}
           </div>
+        </div>
+        <div class="p-4">
+          <p class="text-sm opacity-25">
+            Website built and maintained by{" "}
+            <a href="https://ikaradimos.com/" class="underline">
+              Ioannis Karadimos
+            </a>
+          </p>
         </div>
 
         {/*<div className="footer__group">
